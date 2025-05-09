@@ -1,0 +1,115 @@
+:root {
+  --orange: #f97316;
+  --light-orange: #FFEDD5;
+  --light-blue: #cff4fc;
+  --blue: #1e40af;
+  --dark-blue: #1F2937;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* NavBar icon style */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* Colors */
+.text-orange {
+  color: var(--orange);
+}
+
+.text-blue {
+  color: var(--blue) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+/* Text sizes */
+.fs-7 {
+  font-size: 0.7rem;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.fs-9 {
+  font-size: 0.9rem;
+}
+
+.fs-1-25 {
+  font-size: 1.25rem !important;
+}
+
+/* hr style  */
+.line {
+  opacity: 1;
+  border-top: 3px solid var(--orange);
+  width: 5rem;
+  margin: auto;
+}
+
+/* Border Radius */
+.rounded-bottom-start {
+  border-radius: 0 0 0 0.5rem;
+}
+
+/* UL style  */
+.check-list {
+  list-style-type: none;
+}
+
+/* carousel buttons  */
+.next-button,
+.prev-button {
+  width: 1.8rem;
+  height: 1.8rem;
+  top: 60%;
+}
+
+.prev-button {
+  left: 87%;
+}
+
+.next-button {
+  left: 90%;
+}
+
+@media (max-width: 576px) {
+  .prev-button {
+    left: 80%;
+  }
+}
